@@ -1,6 +1,6 @@
 {
   "name": "nestjs-faunadb",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NestJS FaunaDB module",
   "author": "Lewis Yuburi <lewisyubu@gmail.com>",
   "license": "MIT",
@@ -19,7 +19,10 @@
     "test": "jest --passWithNoTests",
     "test:watch": "jest --watch --passWithNoTests",
     "test:cov": "jest --coverage --passWithNoTests",
-    "test:e2e": "jest --config ./test/jest-e2e.json"
+    "test:e2e": "jest --config ./test/jest-e2e.json",
+    "prerelease": "git checkout master && git pull origin master && npm i && git add .",
+    "release": "standard-version -a",
+    "postrelease": "git push --follow-tags origin master"
   },
   "keywords": [
     "nestjs",
@@ -52,6 +55,7 @@
     "@types/supertest": "2.0.7",
     "jest": "24.7.1",
     "prettier": "1.17.0",
+    "standard-version": "^7.1.0",
     "supertest": "4.0.2",
     "ts-jest": "24.0.2",
     "ts-node": "8.1.0",
