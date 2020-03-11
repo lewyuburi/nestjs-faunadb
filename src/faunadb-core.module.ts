@@ -1,9 +1,11 @@
 import { Global, Module, DynamicModule } from '@nestjs/common';
 
-import { FaunadbModuleAsyncOptions, FaunadbModuleOptions } from './faunadb.interface';
+import {
+  FaunadbModuleAsyncOptions,
+  FaunadbModuleOptions,
+} from './faunadb.interface';
 import { FAUNADB_MODULE_OPTIONS } from './faunadb.constant';
 import { FaunadbService } from './faunadb.service';
-
 
 @Global()
 @Module({
@@ -11,7 +13,6 @@ import { FaunadbService } from './faunadb.service';
   exports: [FaunadbService],
 })
 export class FaunadbCoreModule {
-
   static forRoot(options: FaunadbModuleOptions): DynamicModule {
     const faunadbModuleOptions = {
       provide: FAUNADB_MODULE_OPTIONS,

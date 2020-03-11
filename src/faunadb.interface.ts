@@ -1,7 +1,7 @@
-import { ClientConfig } from 'faunadb'
+import { ClientConfig } from 'faunadb';
 import { ModuleMetadata } from '@nestjs/common/interfaces';
 
-export interface FaunadbModuleOptions extends ClientConfig {}
+export type FaunadbModuleOptions = ClientConfig;
 
 export interface FaunadbModuleAsyncOptions
   extends Pick<ModuleMetadata, 'imports'> {

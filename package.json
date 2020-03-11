@@ -22,16 +22,17 @@
     "test:e2e": "jest --config ./test/jest-e2e.json"
   },
   "keywords": [
-    "nestjs"
+    "nestjs",
+    "faunadb"
   ],
   "publishConfig": {
     "access": "public"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/nestjsplus/nestjs-package-starter"
+    "url": "https://github.com/lewyuburi/nestjs-faunadb"
   },
-  "bugs": "https://github.com/nestjsplus/nestjs-package-starter",
+  "bugs": "https://github.com/lewyuburi/nestjs-faunadb",
   "peerDependencies": {
     "@nestjs/common": "^6.0.0"
   },
