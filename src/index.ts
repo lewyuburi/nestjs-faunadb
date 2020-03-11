@@ -1,4 +1,6 @@
-// export public api from here
-// for example:
-// export * from './decorators';
-export * from './test';
+export * from 'faunadb'
+export * from './faunadb.interface'
+export * from './faunadb.module'
+export * from './faunadb-core.module'
+export * from './faunadb.constant'
+export * from './faunadb.service'
